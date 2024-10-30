@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     var urlRequest : URLRequest?
     var urlSession : URLSession?
     var product : [Product] = []
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         jsonParse()
@@ -56,6 +56,7 @@ class ViewController: UIViewController {
         let uiNib = UINib(nibName: "ProductTableViewCell", bundle: nil)
         self.productTableView.register(uiNib, forCellReuseIdentifier: "ProductTableViewCell")
     }
+    
 
 }
 
